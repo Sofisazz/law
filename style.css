@@ -19,10 +19,11 @@
 }
 
 body {
-  margin: 0; /* Убираем отступы по умолчанию */
-  padding: 0; /* Убираем внутренние отступы */
+  margin: 0;
+  padding: 0; 
   width: 100%;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .nav li {
@@ -1666,4 +1667,15 @@ footer {
     margin-left: 5px;
   }
 
-  .form_consult {
+  .form_consult {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .navig_foot {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
