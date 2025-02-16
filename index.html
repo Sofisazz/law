@@ -10,9 +10,9 @@
 
 <body>
 
-
     <header>
-        <div class="toggle">☰</div>
+        <input type="checkbox" id="menu-toggle" class="toggle_check">
+        <label class="toggle" for="menu-toggle">☰</label>
         <a href="index.html" class="name">Михельсон</a>
 
         <div class="navigation">
@@ -33,13 +33,12 @@
             <div class="buttoncall">
                 <a href="#order_call" class="call">Заказать звонок</a>
             </div>
-
         </div>
     </header>
 
 
     <section class="mihelcon">
-
+        <img class="photo_mic" src="assets/images/1man.png" />
         <div class="order">
             <div class="order_text">
                 <p class="mihelcon_sergey">Михельсон Сергей</p>
@@ -57,47 +56,49 @@
     </section>
 
 
-    <section id="kinds_of_service" class="legal_services">
+    <section class="leg">
+        <section class="legal_services">
+            <div class="interests">
+                <div class="help">
+                    <h4>Юридические услуги</h4>
+                    <h2>Представляю ваши интересы</h2>
+                    <p>Обратитесь ко мне, в любой жизненной ситуации. <br> Вместе - мы справимся с любой задачей.</p>
+                </div>
 
-        <div class="interests">
+                <div class="services">
+                    <div class="box family">
+                        <img class="img" src="assets/images/family.png" alt="Семейное право">
+                        <div class="text">
+                            <h5>Семейное право</h5>
+                            <p>Разводы, брачные контракты. Вместе мы найдём выход</p>
+                        </div>
+                    </div>
 
-            <div class="help">
-                <h4>Юридические услуги</h4>
-                <h2>Представляю ваши интересы</h2>
-                <p>Обратитесь ко мне, в любой жизненной ситуации. <br>Вместе - мы справимся с любой задачей.</p>
+                    <div class="box criminal">
+                        <img class="img" src="assets/images/criminal.png" alt="Уголовное право">
+                        <div class="text">
+                            <h5>Уголовное право</h5>
+                            <p>Возьму в работу ваш случай на любом этапе производства</p>
+                        </div>
+                    </div>
+
+                    <div class="box court">
+                        <img class="img" src="assets/images/court.png" alt="Арбитражный суд">
+                        <div class="text">
+                            <h5>Арбитражный суд</h5>
+                            <p>Представительство в арбитражном суде.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="services">
-
-                <div class="box family">
-                    <div class="text">
-                        <h5>Семейное право</h5>
-                        <p>Разводы, брачные контакты. Вместе мы найдём выход</p>
-                    </div>
-                </div>
-
-                <div class="box criminal">
-                    <div class="text">
-                        <h5>Уголовное право</h5>
-                        <p>Возьму в работу ваш случай на любом этапе производства</p>
-                    </div>
-                </div>
-
-                <div class="box court">
-                    <div class="text">
-                        <h5>Арбитражный суд</h5>
-                        <p>Представительство в арбитражном суде.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        </section>
     </section>
 
     <section id="about" class="practice">
         <div class="practice_laywer">
-
-            <h2 class="practice_name">12 лет частной практики</h2>
+            <div class="twenty">
+                <h2 class="practice_name">12 лет частной практики</h2>
+            </div>
             <p class="practice_text"> Юристы компании «Юридическое Бюро 812» уже долгие годы ведут успешную практику в
                 предоставлении услуг физическим и юридическим лицам в различных правовых сферах, решая вопросы любой
                 сложности. Наши специалисты осуществляют представительство в государственных органах и обеспечивают
@@ -122,7 +123,7 @@
 
 
     <section id="order_call" class="bind_with_me">
-
+        <img class="photo_comp" src="assets/images/computer.png" alt="" computer />
         <div class="bind_name">
             <div class="description">
                 <h2>Свяжитесь со мной</h2>
@@ -137,80 +138,68 @@
                     pattern="(\+375 \(\d{2}\) \d{3}-\d{2}-\d{2}|8 \(\d{2}\) \d{3}-\d{2}-\d{2})" required />
                 <input class="email" placeholder="E-mail" pattern=".+@gmail\.com|.+@mail\.ru"
                     title="Введите в формате: xxx@gmail.com, xxx@mail.ru" required />
+                <button class="application">Оставить заявку</button>
             </form>
         </div>
     </section>
 
 
-    <section id="my_work" class="work">
-        <div class="tips">
-            <div class="how_work">
-                <h2>Как я работаю?</h2>
-                <p>Внимательно ознакомьтесь с этапами работ и выберите для себя самое полезное и интересное</p>
+    <section class="how">
+        <section id="my_work" class="work">
+            <div class="tips">
+                <div class="how_work">
+                    <h2>Как я работаю?</h2>
+                    <p>Внимательно ознакомьтесь с этапами работ и выберите для себя самое полезное и интересное</p>
+                </div>
+
+
+                <div class="special_tip">
+                    <div class="tip ">
+                        <div class="firstTip">
+                            <h4>Вникаю в суть дела</h4>
+                            <p>Провожу с клиентом подробное собеседование, на котором выясняем все детали и
+                                обстоятельства
+                            </p>
+                            <hr>
+                        </div>
+                        <div class="num_of_tip">
+                            <div class="one">1</div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tip ">
+                        <div class="secondTip">
+                            <h4>Предлагаю стратегии</h4>
+                            <p>На основании полученной от клиента информации, готовлю различные варианты действий и
+                                согласовываю их с клиентом</p>
+                            <hr>
+                        </div>
+                        <div class="num_of_tip circle_of_two">
+                            <div class="two">2</div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tip ">
+                        <div class="thirdTip">
+                            <h4>Начинаю работу</h4>
+                            <p>После согласования с клиентом стратегии - начинаю активную работу над делом, довожу до
+                                результата</p>
+                        </div>
+                        <div class="num_of_tip three_num">
+                            <div class="three">3</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-            <div class="special_tip">
-                <div class="tip ">
-                    <div class="firstTip">
-                        <h4>Вникаю в суть дела</h4>
-                        <p>Провожу с клиентом подробное собеседование, на котором выясняем все детали и обстоятельства
-                        </p>
-                        <hr>
-                    </div>
-                    <div class="num_of_tip">
-                        <div class="one">1</div>
-
-                    </div>
-
-                </div>
-
-                <div class="tip ">
-                    <div class="secondTip">
-                        <h4>Предлагаю стратегии</h4>
-                        <p>На основании полученной от клиента информации, готовлю различные варианты действий и
-                            согласовываю их с клиентом</p>
-                        <hr>
-                    </div>
-                    <div class="num_of_tip circle_of_two">
-                        <div class="two">2</div>
-
-                    </div>
-
-                </div>
-
-                <div class="tip ">
-                    <div class="thirdTip">
-                        <h4>Начинаю работу</h4>
-                        <p>После согласования с клиентом стратегии - начинаю активную работу над делом, довожу до
-                            результата</p>
-                    </div>
-                    <div class="num_of_tip">
-                        <div class="three">3</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <section class="consultation">
+        <img class="man2" src="assets/images/concult.png" alt="2man">
         <div class="general_consult">
             <div class="text_consult">
                 <h2>Бесплатная консультация</h2>
@@ -237,34 +226,38 @@
                     </div>
                 </div>
                 <div class="f">
-                 
-                        <input class="but_email" type="email" placeholder="Введите почту"></input>
-                        <button class="application">Оставить заявку</button>
-             
+
+                    <input class="but_email" type="email" placeholder="Введите почту"></input>
+                    <button class="application">Оставить заявку</button>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="clients">
-        <div class="text_clients">
-            <p class="clients_header">Мои клиенты</p>
-            <p class="clients_p">Мне доверяют самые известные компании
-                Санкт-Петербурга и Москвы</p>
-        </div>
-        <div class="photo_clients">
 
-            <img class="photo_cl" src="assets/images/foodsuppliers.png">
-            <img class="photo_cl" src="assets/images/beautybox.png">
-            <img class="photo_cl" src="assets/images/dance.png">
-            <img class="photo_cl" src="assets/images/baby.png">
+    <section class="cl">
+        <section class="clients">
+            <div class="text_clients">
+                <p class="clients_header">Мои клиенты</p>
+                <p class="clients_p">Мне доверяют самые известные компании
+                    Санкт-Петербурга и Москвы</p>
+            </div>
+            <div class="photo_clients">
 
-        </div>
+                <img class="photo_cl" src="assets/images/foodsuppliers.png">
+                <img class="photo_cl" src="assets/images/beautybox.png">
+                <img class="photo_cl" src="assets/images/dance.png">
+                <img class="photo_cl" src="assets/images/baby.png">
 
+            </div>
+
+        </section>
     </section>
 
 
-    <section id="reviews" class="comments">
+    <section class="com">
+        <section id="reviews" class="comments">
 
 
             <div class="head_com">
@@ -308,7 +301,7 @@
                     </div>
                 </div>
             </div>
-        
+        </section>
     </section>
 
     <section class="contacts">
