@@ -36,7 +36,8 @@ header {
   padding-inline: 40px;
   border-bottom: 2px #000000 solid;
 }
-.toggle {
+.toggle,
+.toggle_check {
   display: none;
   cursor: pointer;
 }
@@ -64,6 +65,10 @@ header {
 }
 .nav li {
   list-style: none;
+}
+
+.nav li a {
+  text-decoration: none;
   color: hsl(0, 0%, 0%, 0.7);
 }
 .calling {
@@ -107,7 +112,6 @@ header {
 /*услагии--------------------------- -------------------------------*/
 
 .record {
-  background-color: aquamarine;
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -368,24 +372,12 @@ footer {
   .toggle {
     display: block;
     z-index: 1000;
-    font-size: 80px;
+    font-size: 45px;
   }
   .name {
-    font-size: 65px;
-    margin-left: 30px;
+    font-size: 45px;
   }
-  .navigation {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 132px;
-    background-color: white;
-    border: 1px solid #ccc;
-    z-index: 999;
-  }
-
-  .toggle:hover ~ .navigation,
-  .navigation:hover {
+  #menu-toggle:checked ~ .navigation {
     display: block;
   }
 
@@ -394,13 +386,13 @@ footer {
     flex-direction: column;
     list-style: none;
     padding: 30px;
-    gap: 35px;
+    gap: 23px;
   }
 
   .nav li {
     padding: 10px;
     cursor: pointer;
-    font-size: 50px;
+    font-size: 18px;
     text-align: center;
   }
 
@@ -413,11 +405,19 @@ footer {
     display: none;
   }
 
-  .call {
-    font-size: 50px;
-    padding: 60px 45px;
-    margin: 16px 20px;
-    border-radius: 25px;
+  .navigation {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 98px;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 999;
+  }
+
+  .button {
+    font-size: 18px;
+    padding: 18px 30px;
   }
 
   .navig_foot {
@@ -511,7 +511,38 @@ footer {
     font-size: 16px;
   }
 }
+
+@media (max-width: 900px) {
+  .toggle {
+    font-size: 42px;
+  }
+  .name {
+    font-size: 42px;
+  }
+
+  .navigation {
+    top: 98px;
+  }
+  .nav {
+    padding: 20px;
+    gap: 25px;
+  }
+
+  .nav li {
+    padding: 7px;
+    font-size: 17px;
+  }
+
+  .button {
+    font-size: 17px;
+    padding: 18px 25px;
+  }
+}
+
 @media (max-width: 720px) {
+  .name {
+    font-size: 28px;
+  }
   .services {
     display: flex;
     flex-wrap: wrap;
@@ -521,5 +552,83 @@ footer {
     padding-inline: 60px;
     padding-block: 80px 100px;
   }
- 
+}
+
+@media (max-width: 500px) {
+  .quiz {
+    max-width: 328px;
+    width: 100%;
+    min-width: 100px;
+  }
+  .quiz h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .quiz h2 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .boxik {
+    max-width: 300px;
+    min-width: 100px;
+    width: 100%;
+    gap: 20px;
+  }
+  .record {
+    gap: 20px;
+  }
+  .end_price {
+    max-width: 328px;
+  }
+  .end_price h4 {
+    font-size: 30px;
+    line-height: 32px;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    -moz-hyphens: auto;
+  }
+  .end_price h2 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .description {
+    min-width: 296px;
+  }
+  .description h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .description p {
+    font-size: 18px;
+    line-height: 24px;
+    gap: 32px;
+  }
+
+  .input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .bind_with_me {
+    padding: 70px 16px;
+    gap: 44px;
+  }
+  .form {
+    gap: 16px;
+    width: 100%;
+  }
+  .input {
+    width: 100%;
+  }
+  input {
+    /* width: 100%; */
+    box-sizing: border-box;
+  }
+  .button_form {
+    width: 100%;
+    padding: 20px 30px;
+    border: none;
+    justify-content: center;
+    cursor: pointer; /* Указывает на возможность клика */
+  }
 }
