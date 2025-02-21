@@ -323,17 +323,17 @@ header {
   background-size: cover;
   background-position: center;
   width: 50%;
-  background-image: url(/assets/images/2man.png);
+  background-image: url("assets/images/2man.png");
 }
 .sphoto {
-  background-image: url(/assets/images/diploma.png);
+  background-image: url("assets/images/diploma.png");
   height: 390px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .tphoto {
-  background-image: url(/assets/images/certificate.png);
+  background-image: url("assets/images/certificate.png");
   height: 390px;
   background-repeat: no-repeat;
   background-size: cover;
