@@ -313,7 +313,7 @@ input {
 }
 
 /* footer----------------------------- */
-
+/* 
 footer {
   background: #f7f8fa;
   padding: 80px 480px;
@@ -361,7 +361,7 @@ footer {
   line-height: 20px;
   font-family: "Roboto-Regular", sans-serif;
   color: rgba(0, 0, 0, 0.4);
-}
+} */
 @media (max-width: 1200px) {
 
   .toggle {
@@ -404,9 +404,9 @@ footer {
     flex-direction: column;
     gap: 8px;
   }
-  footer {
+  /* footer {
     padding: 22px 15px;
-  }
+  } */
 
   .form {
     display: flex;
@@ -486,9 +486,9 @@ footer {
     padding-inline: 100px;
     padding-block: 80px 100px;
   }
-  .navig_foot {
+  /* .navig_foot {
     font-size: 16px;
-  }
+  } */
 }
 
 @media (max-width: 900px) {

@@ -747,7 +747,7 @@ header {
 
 footer {
   background: #f7f8fa;
-  padding: 80px 480px;
+  padding: 80px 0px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -920,7 +920,7 @@ footer {
     gap: 8px;
   }
   footer {
-    padding: 22px 15px;
+    /* padding: 22px 15px; */
   }
 
   .form {
