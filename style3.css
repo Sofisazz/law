@@ -919,9 +919,9 @@ footer {
     flex-direction: column;
     gap: 8px;
   }
-  footer {
-    /* padding: 22px 15px; */
-  }
+  /*footer {
+     padding: 22px 15px; 
+  }*/
 
   .form {
     display: flex;
