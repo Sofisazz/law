@@ -6,9 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style3.css">
     <title>Сайт юриста</title>
+    <script>
+        function init() {
+            // Создаем карту
+            const map = new ymaps.Map("map", {
+                center: [53.927072, 27.594050], // Координаты ул. Якуба Коласа, дом 28
+                zoom: 15
+            });
+
+            // Добавляем метку
+            const placemark = new ymaps.Placemark([53.927072, 27.594050], {
+                balloonContent: 'ул. Якуба Коласа, дом 28'
+            });
+
+            map.geoObjects.add(placemark);
+        }
+    </script>
 </head>
 
-<body>
+<body onload="init()"> 
 
 
     <header>
@@ -123,17 +139,8 @@
 
 
     <section id="contact" class="contacts">
-
-        <iframe class="map" src="https://yandex.ru/map-widget/v1/-/CCUu4R8rTA?ll=27.594050,53.927072&z=15" width="600"
-            height="400" frameborder="0">
-        </iframe>
-        <script>
-            // Задаем URL карты для конкретных координат
-            const latitude = 53.927072;  // Изменено на новые координаты
-            const longitude = 27.594050;  // Изменено на новые координаты
-            const mapElement = document.querySelector('iframe');
-            mapElement.src = `https://yandex.ru/map-widget/v1/-/CCUu4R8rTA?ll=${longitude},${latitude}&z=15`;
-        </script>
+        <div id="map" class="map"></div> 
+      
     
         <div class="info_contacts">
             <div class="about_contacts">
