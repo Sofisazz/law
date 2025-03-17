@@ -167,6 +167,7 @@ header {
   font-family: "Roboto-Medium", sans-serif;
   text-decoration: none;
   flex-grow: 1;
+  white-space: nowrap;
 }
 .details_service {
   display: flex;
@@ -180,6 +181,7 @@ header {
   font-family: "Roboto-Medium", sans-serif;
   text-decoration: none;
   flex-grow: 1;
+  white-space: nowrap;
 }
 
 /* sirvec------------------------------------------------ */
